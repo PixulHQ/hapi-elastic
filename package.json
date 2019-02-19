@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "lab -a code -t 100 -I '__core-js_shared__' -L"
+    "test": "lab -a code -t 100 -I '__core-js_shared__' -L",
+    "coveralls": "lab -r lcov | coveralls"
   },
   "keywords": [
     "hapi",
@@ -31,6 +32,7 @@
     "joi": "14.x.x"
   },
   "devDependencies": {
+    "coveralls": "3.x.X",
     "code": "5.2.4",
     "hapi": "18.x.x",
     "lab": "18.0.2"
